@@ -1,6 +1,5 @@
 package model.exceptions;
 
-import javax.management.RuntimeErrorException;
 
 public class ContaExceptions  extends RuntimeException{
 

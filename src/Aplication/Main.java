@@ -1,5 +1,6 @@
 package Aplication;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import model.entities.ContaCorrente;
@@ -34,7 +35,12 @@ public class Main {
 		} catch (ContaExceptions e) {
 			System.out.println("Erro: " + e.getMessage());
 
-		} finally {
+		}catch (InputMismatchException e) {
+			System.out.println("Erro inesperado: Verifique o tipo de dado");
+		}
+		
+		
+		finally {
 
 			sc.close();
 		}

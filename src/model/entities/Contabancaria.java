@@ -50,10 +50,8 @@ public abstract class Contabancaria {
 		return balance;
 	}
 
-	public void deposito(Double valor) {
-		
-		balance+=valor;
-	}
+	public abstract void deposito(Double valor);
+	
 	
 	public void retirada(Double valor) {
 		if (valor<balance && balance>0) {
